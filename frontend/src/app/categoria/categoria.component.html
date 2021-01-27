@@ -1,0 +1,26 @@
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Ativo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let categoria of categorias">
+            <td>{{ categoria.id }}</td>
+            <td>{{ categoria.nome }}</td>
+            <td>{{ categoria.descricao }}</td>
+            <td *ngIf="categoria.ativo === true">Sim</td>
+            <td *ngIf="categoria.ativo === false">Não</td>
+            <td>
+                <a class="azul" routerLink="/categorias/atualizar/{{ categoria.id }}">Atualizar</a>
+                <a class="vermelho" routerLink="/categorias/deletar/{{ categoria.id }}">Deletar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<button routerLink="/categorias/criar">Criar categoria</button>
+<button routerLink="/">Voltar</button>

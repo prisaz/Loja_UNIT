@@ -1,0 +1,14 @@
+<form>
+    <input name="nome" placeholder="Nome" [(ngModel)]="fornecedor.nome">
+    <br>
+    <input name="cnpj" placeholder="CNPJ" [(ngModel)]="fornecedor.cnpj">
+    <br>
+    <input name="email" placeholder="Email" [(ngModel)]="fornecedor.email">
+    <br>
+    <input name="endereco" placeholder="Endereço" [(ngModel)]="fornecedor.endereco">
+    <br>
+    <input name="telefone" placeholder="Telefone" [(ngModel)]="fornecedor.telefone">
+    <br>
+    <button (click)="atualizarFornecedor()">Atualizar fornecedor</button>
+    <button routerLink="/fornecedores">Voltar</button>
+</form>

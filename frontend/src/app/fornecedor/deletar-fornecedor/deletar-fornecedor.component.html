@@ -1,0 +1,14 @@
+<form>
+    <input name="nome" placeholder="Nome" [(ngModel)]="fornecedor.nome" disabled>
+    <br>
+    <input name="cnpj" placeholder="CNPJ" [(ngModel)]="fornecedor.cnpj" disabled>
+    <br>
+    <input name="email" placeholder="Email" [(ngModel)]="fornecedor.email" disabled>
+    <br>
+    <input name="endereco" placeholder="Endereço" [(ngModel)]="fornecedor.endereco" disabled>
+    <br>
+    <input name="telefone" placeholder="Telefone" [(ngModel)]="fornecedor.telefone" disabled>
+    <br>
+    <button (click)="deletarFornecedor()">Deletar fornecedor</button>
+    <button routerLink="/fornecedores">Voltar</button>
+</form>
