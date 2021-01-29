@@ -1,1 +1,13 @@
-<p>atualizar-categoria works!</p>
+<form>
+    <input name="nome" placeholder="Nome" [(ngModel)]="categoria.nome">
+    <br>
+    <input name="descricao" placeholder="Descrição" [(ngModel)]="categoria.descricao">
+    <br>
+    <select name="ativo" [(ngModel)]="categoria.ativo">
+        <option value="true">Sim</option>
+        <option value="false">Não</option>
+    </select>
+    <br>
+    <button (click)="atualizarCategoria()">Atualizar categoria</button>
+    <button routerLink="/categorias">Voltar</button>
+</form>

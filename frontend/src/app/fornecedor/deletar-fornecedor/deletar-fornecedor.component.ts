@@ -28,7 +28,7 @@ export class DeletarFornecedorComponent implements OnInit {
   ngOnInit(): void {
     var id = this.route.snapshot.paramMap.get('id')
     this.httpClient.get<Fornecedor>(this.urlBackend+'/'+ id).subscribe(fornecedor => {
-      this.fornecedor = fornecedor
+    this.fornecedor = fornecedor
     })
   }
   deletarFornecedor(){

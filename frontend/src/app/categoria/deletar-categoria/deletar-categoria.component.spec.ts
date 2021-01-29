@@ -6,6 +6,7 @@ describe('DeletarCategoriaComponent', () => {
   let component: DeletarCategoriaComponent;
   let fixture: ComponentFixture<DeletarCategoriaComponent>;
 
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ DeletarCategoriaComponent ]
